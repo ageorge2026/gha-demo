@@ -1,0 +1,4 @@
+This is a new Text file used to test if PUSH Git Actions picks up a build job automatically. 
+We had changed the blank.yml to have "on" : push.
+
+This test handles whenever a new file gets added to the repository.
