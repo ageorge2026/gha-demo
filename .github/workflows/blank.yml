@@ -6,5 +6,5 @@ jobs:
     steps:
       - name: Build Step
         run: echo "Hello, ${{vars.MY_NAME}} A demo build"
-        run: echo "Docker has ${{ secrets.DOCKER_PASSWORD }}"
+             echo "Docker has ${{ secrets.DOCKER_PASSWORD }}"
  
