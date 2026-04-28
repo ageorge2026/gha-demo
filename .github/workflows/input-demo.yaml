@@ -11,7 +11,4 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: DEploy the API
-        run : echo "Deploying the App to ${{ inputs }}"
-    
-    
-  
+          run : echo "Deploying the App to ${{ inputs }}"
