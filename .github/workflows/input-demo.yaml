@@ -10,5 +10,5 @@ jobs:
     inputs-demo:
       runs-on: ubuntu-latest
       steps:
-        - name: DEploy the API
-          run : echo "Deploying the App to ${{ inputs }}"
+        - name: Deploy the API
+          run : echo "Deploying the App to ${{ inputs.environment }}"
