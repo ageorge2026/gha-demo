@@ -1,12 +1,12 @@
 name: if-demo
 on:
-  workflow_dispatch:
+  push:
     branches:
       - main
       - develop
 jobs:
   demo:
-    runs-on: uubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Run this step if branch is main
         if: github.ref == 'refs/heads/main'
