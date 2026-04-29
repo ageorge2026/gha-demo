@@ -4,6 +4,6 @@ jobs:
   demo:
     runs-on: ubuntu-latest
     steps:
-      - name: Run for me or Java
+      - name: Run for ageorge2026 or Java
         if: github.actor == 'ageorge2026' || github.actor == 'Java'
         run: echo "This step is triggered by ageorge2026 or Java"
