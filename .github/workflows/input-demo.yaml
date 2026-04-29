@@ -4,8 +4,14 @@ on:
     inputs: 
       environment:
         description: Choose the environment to deploy
+        type: choice
         required: true
         default: dev
+        options:
+          - dev
+          - test
+          - QA
+          - prod
 jobs:
     inputs-demo:
       runs-on: ubuntu-latest
