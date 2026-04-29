@@ -2,7 +2,7 @@ name: Output share across jobs
 on: push
 jobs:
   build:
-    outputs:
+    myoutputs:
       version: ${{ steps.step1.outputs.version }}
     runs-on: ubuntu-latest
     steps:
@@ -15,6 +15,6 @@ jobs:
     steps:
       - name: deploy step
         id: deploy1
-        run: echo " We are deploying App with version ${{ needs.build.outputs.version }} "
+        run: echo " We are deploying App with version ${{ needs.build.myoutputs.version }} "
           
   
