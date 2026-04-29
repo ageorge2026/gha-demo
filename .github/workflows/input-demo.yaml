@@ -12,7 +12,7 @@ on:
           - test
           - QA
           - prod
-      tag:
+      artifact_tag:
         description: Choose the Git Tag
         required: true
 jobs:
@@ -20,4 +20,4 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Deploy the API
-          run : echo "Deploying the App to ${{ inputs.environment }}"
+          run : echo "Deploying the ${{inputs.artifact_tag }} App to ${{ inputs.environment }}"
