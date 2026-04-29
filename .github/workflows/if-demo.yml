@@ -1,6 +1,6 @@
 name: if-demo
 on:
-  push:
+  workflow_dispatch:
     branches:
       - main
       - develop
