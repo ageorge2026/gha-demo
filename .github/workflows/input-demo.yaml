@@ -12,6 +12,9 @@ on:
           - test
           - QA
           - prod
+      tag:
+        description: Choose the Git Tag
+        required: true
 jobs:
     inputs-demo:
       runs-on: ubuntu-latest
