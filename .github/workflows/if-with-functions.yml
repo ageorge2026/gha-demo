@@ -1,5 +1,6 @@
 name: Nice If example
-on: push:
+on: 
+  push:
       branches:
         - main
         - develop
